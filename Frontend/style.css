@@ -1,0 +1,103 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+}
+
+header {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+.controls, .scenario {
+  display: flex;
+  gap: 12px;
+  padding: 10px;
+  justify-content: center;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.scenario {
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  padding: 10px;
+}
+
+#summary {
+  width: 260px;
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+#visualization {
+  flex: 1;
+  background: white;
+  border-radius: 6px;
+  position: relative;
+}
+
+#gridCanvas {
+  width: 100%;
+  height: 520px;
+}
+
+#legend {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  padding: 6px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.low { background: green; }
+.medium { background: orange; }
+.high { background: red; }
+.changed { background: purple; }
+
+#nodeDetails {
+  margin: 10px;
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.hint {
+  font-size: 13px;
+  color: #555;
+}
+
+button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.stressBtn {
+  background: #dc2626;
+}
+
+button:hover {
+  opacity: 0.9;
+}
